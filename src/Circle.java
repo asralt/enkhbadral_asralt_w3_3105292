@@ -15,7 +15,6 @@ public class Circle extends Shape {
         this.r = r;
     }
 
-    // Implementing Abstract Methods
     @Override
     public double a() {
         return Math.PI * Math.pow(r, 2);
