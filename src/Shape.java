@@ -1,3 +1,4 @@
+//Asralt Enkhbadral 3105292
 public abstract class Shape {
     private String name;
 

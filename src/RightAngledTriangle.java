@@ -1,3 +1,4 @@
+//Asralt Enkhbadral 3105292
 public class RightAngledTriangle extends Shape {
     private double base;
     private double height;

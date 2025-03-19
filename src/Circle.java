@@ -1,4 +1,4 @@
-// Circle.java
+//Asralt Enkhbadral 3105292
 public class Circle extends Shape {
     private double r;
 
