@@ -22,7 +22,7 @@ public class ShapeTest {
 
     @Test
     public void TestRightAngledTriangle() {
-        RightAngledTriangle triangle = new RightAngledTriangle("triangle", 2.0, 3.0, 2);
+        RightAngledTriangle triangle = new RightAngledTriangle("triangle", 2.0, 3.0);
         assertEquals(6.0, triangle.a());
         assertEquals(7.0, triangle.pre());
     }

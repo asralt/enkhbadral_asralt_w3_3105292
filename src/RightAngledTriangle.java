@@ -1,14 +1,13 @@
 public class RightAngledTriangle extends Shape {
     private double base;
     private double height;
-    private double hypo;
+    private double hypotenuse;
 
-    public RightAngledTriangle(String name, double base, double height, double hypo) {
+    public RightAngledTriangle(String name, double base, double height) {
         super(name);
         this.base = base;
         this.height = height;
-        this.hypo = Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
-
+        this.hypotenuse = Math.sqrt(base * base + height * height);
     }
 
     public double getBase() {
@@ -19,23 +18,19 @@ public class RightAngledTriangle extends Shape {
         return height;
     }
 
-    public double getHypo() {
-        return hypo;
+    public double getHypotenuse() {
+        return hypotenuse;
     }
 
     public void setBase(double base) {
         this.base = base;
-        this.hypo = Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
+        this.hypotenuse = Math.sqrt(base * base + height * height);
     }
 
     public void setHeight(double height) {
         this.height = height;
-        this.hypo = Math.sqrt(Math.pow(base, 2) + Math.pow(height, 2));
+        this.hypotenuse = Math.sqrt(base * base + height * height);
     }
-
-    // public void setHyp(double hypo) {
-
-    // }
 
     @Override
     public double a() {
@@ -44,11 +39,11 @@ public class RightAngledTriangle extends Shape {
 
     @Override
     public double pre() {
-        return base + height + hypo;
+        return base + height + hypotenuse;
     }
 
     @Override
     public String toString() {
-        return "base : " + base + "Heihght : " + height + "Hypo : " + hypo;
+        return "base: " + base + " height: " + height + "hypo: " + hypotenuse;
     }
 }
